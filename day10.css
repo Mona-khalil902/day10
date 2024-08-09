@@ -1,0 +1,175 @@
+@font-face {
+    font-family:"Manrope-Regular" ;
+    src: url(./fonts/Manrope-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Manrope-Bold";
+    src: url(./fonts/Manrope-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family:"fonts/Manrope-ExtraBold" ;
+    src: url(./fonts/Manrope-ExtraBold.ttf);
+    font-weight: bold;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Manrope-Regular";
+}
+#maincontainer{
+    width: 1400px;
+    height: 600px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1px;
+}
+#parent{
+    width: 600px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#rightDiv{
+    width: 35%;
+    height: 100%;
+}
+#imagesize{
+    width: 120%;
+    height: 100%;
+    border-radius: 10px;
+}
+#lefttDiv{
+    width: 65%;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 0 10px 10px 0;
+    background-color: hsl(210, 17%, 98%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+#firstparagraph{
+    font-family:"fonts/Manrope-ExtraBold" ;
+    font-size: 18px;
+    color: hsl(217, 19%, 35%);
+}
+.secondparagraph{
+    color: hsl(214, 17%, 51%);
+    font-family: "Manrope-Bold";
+}
+p{
+    margin: 0;
+}
+#bottomDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -20px;
+}
+.michellephoto{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+#textimage{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+#labelsDiv{
+    display: flex;
+    flex-direction: column;
+}
+button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(210, 46%, 95%);
+}
+.icons{
+    width: 20px;
+    height: 20px;
+}
+.sharelabel{
+    color:hsl(212, 23%, 69%) ;
+}
+#allicons{
+    width: 220PX;
+    height: 45PX;
+    padding: 20PX;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 10PX;
+    box-shadow: 5PX 5PX 5PX 5PX hsl(210, 46%, 95%);
+    position: relative;
+    left: 90px;
+    top: -20px;
+    visibility: hidden;
+}
+#allbuttndiv{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    top: -20px;
+}
+
+@media only screen and (max-width: 900px) {
+   body{
+    margin: 0;
+   }
+    #maincontainer{
+        width: 100%;
+        height: 100%;
+    }
+    #parent{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;  
+    }
+    #rightDiv{
+        width: 100%;
+        height: 30%;
+    }
+    #imagesize{
+        width: 100%;
+        height: 120%;
+        border-radius: 10px 10px 0 0;
+    }
+    #lefttDiv{
+        width: 100%;
+        height: unset;
+        border-radius: 0 0 10px 10px;
+
+    }
+    #allicons{
+        position: relative;
+        left: 40px;
+    }
+
+}
